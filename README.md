@@ -17,6 +17,10 @@ Spaces have many cars and cars have many spaces.
 #### Further
 - Add bootstrap to your app
 
+- Add the ability to associate an existing car to an existing space.
+
+- Add the ability to associate an existing space to an existing car.
+
 - Add other nested routes to your app: 
 ```
 /spaces/:id/users
@@ -32,6 +36,7 @@ Build a full CRUD pokedex.
 - Pokemon belong to a user.
 
 #### Further
+- Add the ability for a user to capture a pokemon.
 - Edit the seeds.rb file to seed the DB with pokemon and types: https://github.com/wdi-sg/pokedex-rails/blob/master/db/seeds.rb
 - Add bootstrap to your app.
 - Change the model so that pokemon also belong to many users.
