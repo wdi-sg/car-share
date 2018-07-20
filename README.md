@@ -32,6 +32,7 @@ Build a full CRUD pokedex.
 - Pokemon belong to a user.
 
 #### Further
+- Edit the seeds.rb file to seed the DB with pokemon and types: https://github.com/wdi-sg/pokedex-rails/blob/master/db/seeds.rb
 - Add bootstrap to your app.
 - Change the model so that pokemon also belong to many users.
 - Add other nested routes:
