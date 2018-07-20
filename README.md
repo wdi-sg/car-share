@@ -11,8 +11,8 @@ Spaces have many cars and cars have many spaces.
 
 #### Deliverables
 - Rails CRUD app. At least one nested route: /spaces/:id/cars
-- Users can login.
-- When you create cars, associate them with a user.
+- When you create cars, associate them with a user and a space.
+- Users can login
 
 #### Further
 - Add bootstrap to your app
