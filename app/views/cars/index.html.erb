@@ -1,0 +1,23 @@
+<h1>Cars</h1>
+<table>
+  <tr>
+    <th>Cars</th>
+    <th>Description</th>
+  </tr>
+
+  <% if @cars == nil%>
+      <tr>
+      <td> no record </td>
+      <td>no record</td>
+    </tr>
+  <% else %>
+    <% @cars.each do |car| %>
+    <tr>
+      <td><%= car.name %></td>
+      <td><%= car.description %></td>
+    </tr>
+    <% end %>
+  <% end %>  
+</table>
+
+<%= link_to 'log out', destroy_user_session_url, method: :delete %>

@@ -1,0 +1,9 @@
+
+
+<h1>Car</h1>
+<%= @car.name %><br>
+<h1>spaces</h1>
+<% @car.spaces.each do |space| %>
+<%= space.name %>
+<%= space.location %><br>
+<% end %>
