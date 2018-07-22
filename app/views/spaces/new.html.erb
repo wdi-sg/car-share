@@ -1,0 +1,23 @@
+<%= form_with scope: :space, url: spaces_path, local: true do |form| %>
+
+    <p>
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+    </p>
+  
+    <p>
+      <%= form.label :location %><br>
+      <%= form.text_area :location %>
+    </p>
+  
+  
+      <p>
+  
+        <%= form.collection_check_boxes :car_ids, @cars, :id, :name %>
+      </p>
+  
+  
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
