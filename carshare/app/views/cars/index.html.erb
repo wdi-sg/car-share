@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-<%= link_to 'New Song', new_song_path %>
+<%= link_to 'New Car', new_car_path %>
 <% end %>
 
 <div class="container">
@@ -8,16 +8,16 @@
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">title</th>
-          <th scope="col">created</th>
+          <th scope="col">make</th>
+          <th scope="col">model</th>
         </tr>
       </thead>
       <tbody>
-      <% @songs.each do |song| %>
+      <% @cars.each do |car| %>
         <tr>
-          <td><%= song.id %></td>
-          <td class="song-title"><%= song.title %></td>
-          <td><%= song.created_at.strftime('%d.%m.%Y') %></td>
+          <td><%= car.id %></td>
+          <td class="car-make"><%= car-make %></td>
+          <td><%= car.created_at.strftime('%d.%m.%Y') %></td>
         </tr>
       <% end %>
       </tbody>
