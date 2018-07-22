@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyText
+  plate_number: MyText
+  user: one
+
+two:
+  brand: MyText
+  plate_number: MyText
+  user: two

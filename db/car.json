@@ -1,0 +1,24 @@
+{
+  "car":[
+    {
+      "brand":"Honda",
+      "plate_number":"SGP 1234Y",
+      "user_id":"1"
+    },
+    {
+      "brand":"Toyota",
+      "plate_number":"RD 1234Y",
+      "user_id":"2"
+    },
+    {
+      "brand":"Nissan",
+      "plate_number":"EV 1234Y",
+      "user_id":"3"
+    },
+    {
+      "brand":"Subaru",
+      "plate_number":"PA 1234Y",
+      "user_id":"4"
+    }
+  ]
+}
