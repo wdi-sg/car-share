@@ -1,0 +1,9 @@
+<h1>Avaiable parking spaces</h1> 
+
+<%= "#{@car.model} has the avaiable parking spaces listed below" %>
+
+<ul>
+    <% @spaces.each do |space| %>
+        <li><%= space.location %></li>
+    <% end %>
+</ul>

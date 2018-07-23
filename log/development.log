@@ -1,0 +1,545 @@
+  [1m[35m (651.1ms)[0m  [1m[35mCREATE DATABASE "carshare_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (546.0ms)[0m  [1m[35mCREATE DATABASE "carshare_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (49.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (46.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to Users (20180723221317)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180723221317"]]
+  ↳ bin/rails:9
+  [1m[35m (40.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-23 22:14:00.214384"], ["updated_at", "2018-07-23 22:14:00.214384"]]
+  ↳ bin/rails:9
+  [1m[35m (40.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE DATABASE "carshare_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "carshare_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCars (20180723222251)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (82.0ms)[0m  [1m[35mCREATE TABLE "cars" ("id" bigserial primary key, "model_id" bigint, "description_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180723222251_create_cars.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_cars_on_model_id" ON "cars"  ("model_id")[0m
+  ↳ db/migrate/20180723222251_create_cars.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_cars_on_description_id" ON "cars"  ("description_id")[0m
+  ↳ db/migrate/20180723222251_create_cars.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180723222251"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20180723222432)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (43.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name_id" bigint, "email_id" bigint, "password_id" bigint)[0m
+  ↳ db/migrate/20180723222432_create_users.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_name_id" ON "users"  ("name_id")[0m
+  ↳ db/migrate/20180723222432_create_users.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_email_id" ON "users"  ("email_id")[0m
+  ↳ db/migrate/20180723222432_create_users.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_password_id" ON "users"  ("password_id")[0m
+  ↳ db/migrate/20180723222432_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180723222432"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSpaces (20180723222615)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (117.8ms)[0m  [1m[35mCREATE TABLE "spaces" ("id" bigserial primary key, "location_id" bigint)[0m
+  ↳ db/migrate/20180723222615_create_spaces.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_spaces_on_location_id" ON "spaces"  ("location_id")[0m
+  ↳ db/migrate/20180723222615_create_spaces.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180723222615"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCarsSpaces (20180723223344)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (24.4ms)[0m  [1m[35mCREATE TABLE "cars_spaces" ("id" bigserial primary key, "car_id" bigint, "space_id" bigint)[0m
+  ↳ db/migrate/20180723223344_create_cars_spaces.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_cars_spaces_on_car_id" ON "cars_spaces"  ("car_id")[0m
+  ↳ db/migrate/20180723223344_create_cars_spaces.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_cars_spaces_on_space_id" ON "cars_spaces"  ("space_id")[0m
+  ↳ db/migrate/20180723223344_create_cars_spaces.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180723223344"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4562732605663348515)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-07-24 06:42:00 +0800
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Bryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Bryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Bryan/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 53ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-07-24 06:42:06 +0800
+  
+SyntaxError (/Users/Bryan/Desktop/General_Assembly/20_07_rails_password/homeWork_car_share/car-share/carshare/app/controllers/cars_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/cars_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/cars" for 127.0.0.1 at 2018-07-24 06:42:20 +0800
+Processing by CarsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (Unable to autoload constant Car, expected /Users/Bryan/Desktop/General_Assembly/20_07_rails_password/homeWork_car_share/car-share/carshare/app/models/car.rb to define it):
+  
+app/controllers/cars_controller.rb:3:in `index'
+Started GET "/cars" for 127.0.0.1 at 2018-07-24 06:45:39 +0800
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 425ms (Views: 409.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-07-24 06:47:29 +0800
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (34.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 71ms (Views: 23.1ms | ActiveRecord: 44.3ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2018-07-24 06:50:34 +0800
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 8.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe385b905a8>
+Did you mean?  model_id):
+    1: <h1>Create new car</h1>
+    2: 
+    3: <%= form_for @car, :local => true do |form| %>
+    4:     <%= form.text_field :model, placeholder: 'Car model' %>
+    5:     <%= form.text_field :description, placeholder: 'Description' %>
+    6:     <%= form.submit 'Create' %>
+    7: <% end %>
+  
+app/views/cars/new.html.erb:4:in `block in _app_views_cars_new_html_erb__1391609402845300418_70307625692360'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb__1391609402845300418_70307625692360'
+Started GET "/cars/new" for 127.0.0.1 at 2018-07-24 06:51:50 +0800
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe384265790>
+Did you mean?  model_id):
+    1: <h1>Create new car</h1>
+    2: 
+    3: <%= form_for @car, :local => true do |form| %>
+    4:     <%= form.text_field :model, placeholder: 'model' %>
+    5:     <%= form.text_field :description, placeholder: 'Description' %>
+    6:     <%= form.submit 'Create' %>
+    7: <% end %>
+  
+app/views/cars/new.html.erb:4:in `block in _app_views_cars_new_html_erb__1391609402845300418_70307575673660'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb__1391609402845300418_70307575673660'
+Started GET "/cars/new" for 127.0.0.1 at 2018-07-24 06:54:04 +0800
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 7.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe388be7288>
+Did you mean?  model_id):
+    1: <h1>Create new car</h1>
+    2: 
+    3: <%= form_for @car, :local => true do |form| %>
+    4:     <%= form.text_field :model, placeholder: 'Model' %>
+    5:     <%= form.text_field :description, placeholder: 'Description' %>
+    6:     <%= form.submit 'Create' %>
+    7: <% end %>
+  
+app/views/cars/new.html.erb:4:in `block in _app_views_cars_new_html_erb__1391609402845300418_70307588965560'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb__1391609402845300418_70307588965560'
+Started GET "/cars/new" for 127.0.0.1 at 2018-07-24 06:54:34 +0800
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `description' for #<Car:0x00007fe38a1761a8>
+Did you mean?  description_id):
+    2: 
+    3: <%= form_for @car, :local => true do |form| %>
+    4:     <%= form.text_field :model_id, placeholder: 'Model' %>
+    5:     <%= form.text_field :description, placeholder: 'Description' %>
+    6:     <%= form.submit 'Create' %>
+    7: <% end %>
+  
+app/views/cars/new.html.erb:5:in `block in _app_views_cars_new_html_erb__1391609402845300418_70307625543440'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb__1391609402845300418_70307625543440'
+Started GET "/cars/new" for 127.0.0.1 at 2018-07-24 06:54:45 +0800
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2018-07-24 06:55:03 +0800
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sag5GmCR7S6/6hb5YPevhUH+dHLcdMAJgJGE+4TBRrXjmXVV4eGkcLv9GiQy7kvZA4Zi16Weq79B+cX6NBlk8A==", "car"=>{"model_id"=>"toyota", "description_id"=>""}, "commit"=>"Create"}
+Unpermitted parameters: :model_id, :description_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cars_controller.rb:15
+  [1m[36mCar Create (1.3ms)[0m  [1m[32mINSERT INTO "cars" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2018-07-23 22:55:03.367780"], ["updated_at", "2018-07-23 22:55:03.367780"]]
+  ↳ app/controllers/cars_controller.rb:15
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cars_controller.rb:15
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 47ms (ActiveRecord: 42.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-07-24 06:55:03 +0800
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Car:0x00007fe385b6baf0>):
+    2: 
+    3: <ul>
+    4:     <% @cars.each do |car| %>
+    5:         <li><%= car.name %></li>
+    6:         <li><%= car.description %></li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/cars/index.html.erb:5:in `block in _app_views_cars_index_html_erb___3260668683700226075_70307613534200'
+app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb___3260668683700226075_70307613534200'
+Started GET "/cars" for 127.0.0.1 at 2018-07-24 06:55:20 +0800
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe3845a5608>
+Did you mean?  model_id):
+    2: 
+    3: <ul>
+    4:     <% @cars.each do |car| %>
+    5:         <li><%= car.model %></li>
+    6:         <li><%= car.description %></li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/cars/index.html.erb:5:in `block in _app_views_cars_index_html_erb___3260668683700226075_70307613648860'
+app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb___3260668683700226075_70307613648860'
+Started GET "/cars" for 127.0.0.1 at 2018-07-24 06:55:53 +0800
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe38a0c5c68>
+Did you mean?  model_id):
+    2: 
+    3: <ul>
+    4:     <% @cars.each do |car| %>
+    5:         <li><%= car.model %></li>
+    6:         <li><%= car.description %></li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/cars/index.html.erb:5:in `block in _app_views_cars_index_html_erb___3260668683700226075_70307625219980'
+app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb___3260668683700226075_70307625219980'
+Started GET "/cars" for 127.0.0.1 at 2018-07-24 06:55:55 +0800
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe38a11f6a0>
+Did you mean?  model_id):
+    2: 
+    3: <ul>
+    4:     <% @cars.each do |car| %>
+    5:         <li><%= car.model %></li>
+    6:         <li><%= car.description %></li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/cars/index.html.erb:5:in `block in _app_views_cars_index_html_erb___3260668683700226075_70307625395980'
+app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb___3260668683700226075_70307625395980'
+Started GET "/cars" for 127.0.0.1 at 2018-07-24 06:56:04 +0800
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/views/cars/index.html.erb:4
+  Rendered cars/index.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe385b83c40>
+Did you mean?  model_id):
+    2: 
+    3: <ul>
+    4:     <% @cars.each do |car| %>
+    5:         <li><%= car.model %></li>
+    6:         <li><%= car.description %></li>
+    7:     <% end %>
+    8: </ul>
+  
+app/views/cars/index.html.erb:5:in `block in _app_views_cars_index_html_erb___3260668683700226075_70307577567220'
+app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb___3260668683700226075_70307577567220'
+Started GET "/cars/new" for 127.0.0.1 at 2018-07-24 06:57:21 +0800
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe388b85c90>
+Did you mean?  model_id):
+    1: <h1>Create new car</h1>
+    2: 
+    3: <%= form_for @car, :local => true do |form| %>
+    4:     <%= form.text_field :model, placeholder: 'Model' %>
+    5:     <%= form.text_field :description, placeholder: 'Description' %>
+    6:     <%= form.submit 'Create' %>
+    7: <% end %>
+  
+app/views/cars/new.html.erb:4:in `block in _app_views_cars_new_html_erb__1391609402845300418_70307614040980'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb__1391609402845300418_70307614040980'
+Started GET "/cars/new" for 127.0.0.1 at 2018-07-24 07:06:55 +0800
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 10.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe387795398>
+Did you mean?  model_id):
+    1: <h1>Create new car</h1>
+    2: 
+    3: <%= form_for @car, :local => true do |form| %>
+    4:     <%= form.text_field :model, placeholder: 'Model' %>
+    5:     <%= form.text_field :description, placeholder: 'Description' %>
+    6:     <%= form.submit 'Create' %>
+    7: <% end %>
+  
+app/views/cars/new.html.erb:4:in `block in _app_views_cars_new_html_erb__1391609402845300418_70307601262200'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb__1391609402845300418_70307601262200'
+Started GET "/cars/new" for 127.0.0.1 at 2018-07-24 07:12:48 +0800
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 11.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `model' for #<Car:0x00007fe38439c348>
+Did you mean?  model_id):
+    1: <h1>Create new car</h1>
+    2: 
+    3: <%= form_for @car, :local => true do |form| %>
+    4:     <%= form.text_field :model, placeholder: 'Model' %>
+    5:     <%= form.text_field :description, placeholder: 'Description' %>
+    6:     <%= form.submit 'Create' %>
+    7: <% end %>
+  
+app/views/cars/new.html.erb:4:in `block in _app_views_cars_new_html_erb__1391609402845300418_70307582616580'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb__1391609402845300418_70307582616580'
+Started GET "/spaces/new" for 127.0.0.1 at 2018-07-24 07:12:58 +0800
+  
+SyntaxError (/Users/Bryan/Desktop/General_Assembly/20_07_rails_password/homeWork_car_share/car-share/carshare/app/controllers/spaces_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/spaces_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/spaces/new" for 127.0.0.1 at 2018-07-24 07:13:39 +0800
+Processing by SpacesController#new as HTML
+  Rendering spaces/new.html.erb within layouts/application
+  Rendered spaces/new.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 9.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `location' for #<Space id: nil, location_id: nil>
+Did you mean?  location_id):
+    1: <h1>Create new spaces</h1>
+    2: 
+    3: <%= form_for @space, :local => true do |form| %>
+    4:     <%= form.text_field :location, placeholder: 'Location' %>
+    5:     <%= form.submit 'Create' %>
+    6: <% end %>
+  
+app/views/spaces/new.html.erb:4:in `block in _app_views_spaces_new_html_erb__1753220530946278358_70307576259520'
+app/views/spaces/new.html.erb:3:in `_app_views_spaces_new_html_erb__1753220530946278358_70307576259520'
