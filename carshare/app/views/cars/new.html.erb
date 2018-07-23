@@ -1,0 +1,21 @@
+<p>Create New Car</p>
+
+<%= form_with scope: :car, url: cars_path, local: true do |form| %>
+  <p>
+    <%= form.label :make %><br>
+    <%= form.text_field :make %>
+  </p>
+
+  <p>
+    <%= form.label :color %><br>
+    <%= form.text_field :color %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', cars_path %>
+<%= link_to 'log out', destroy_user_session_url, method: :delete %>
+

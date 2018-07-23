@@ -1,0 +1,27 @@
+<% if user_signed_in? %>
+<%= link_to 'New Car', new_car_path %>
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">make</th>
+          <th scope="col">color</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @cars.each do |car| %>
+        <tr>
+          <td><%= car.id %></td>
+          <td class="car-make"><%= car-make %></td>
+          <td class="car-color"><%= car-color %></td>
+          <td><%= car.created_at.strftime('%d.%m.%Y') %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
