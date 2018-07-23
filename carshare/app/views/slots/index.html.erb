@@ -1,0 +1,26 @@
+<% if user_signed_in? %>
+<%= link_to 'New slot', new_slot_path %>
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">make</th>
+          <th scope="col">model</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @slots.each do |slot| %>
+        <tr>
+          <td><%= slot.id %></td>
+          <td class="slot-number"><%= slot-number %></td>
+          <td><%= slot.created_at.strftime('%d.%m.%Y') %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

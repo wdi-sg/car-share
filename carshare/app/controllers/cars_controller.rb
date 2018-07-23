@@ -12,7 +12,7 @@ class CarsController < ApplicationController
   
     def show
       @car = Car.find(params[:id])
-      gon.cars = @cars
+      # gon.cars = @cars
   
       
       respond_to do |format|
@@ -32,7 +32,7 @@ class CarsController < ApplicationController
     def create
         @car = Car.new(car_params)
   
-      @car.user = current_user
+      @car.user_id = current_user
   
       if @car.save
         redirect_to @car
@@ -60,7 +60,7 @@ class CarsController < ApplicationController
   
     private
       def car_params
-        params.require(:car).permit(:make).permit(color)
+        params.require(:car).permit(:make).permit(:color)
       end
   end
   

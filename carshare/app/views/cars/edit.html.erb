@@ -1,0 +1,21 @@
+<h1>Edit Car</h1>
+
+<%= form_with(model: @car, local: true) do |form| %>
+
+  <p>
+    <%= form.label :make %><br>
+    <%= form.text_field :make %>
+  </p>
+
+  <p>
+    <%= form.label :color %><br>
+    <%= form.text_area :color %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Back', cars_path %>

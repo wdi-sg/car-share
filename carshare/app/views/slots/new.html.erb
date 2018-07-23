@@ -1,0 +1,16 @@
+<p>Create New Car Park Slot</p>
+
+<%= form_with scope: :slot, url: slots_path, local: true do |form| %>
+  <p>
+    <%= form.label :number %><br>
+    <%= form.text_field :number %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', slots_path %>
+<%= link_to 'log out', destroy_user_session_url, method: :delete %>
+
