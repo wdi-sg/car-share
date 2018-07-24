@@ -1,0 +1,6 @@
+<h1>Create new spaces</h1>
+
+<%= form_for @space, :local => true do |form| %>
+    <%= form.text_field :location, placeholder: 'Location' %>
+    <%= form.submit 'Create' %>
+<% end %>
